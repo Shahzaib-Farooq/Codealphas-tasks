@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #080808;
+    color: #fff;
+}
+.container {
+    padding: 10px 10%;
+}
+
+/* Header */
+#header {
+    width: 100%;
+    height: 100vh;
+}
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #ff004f;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+/* about */
+
+.col1, .col2, .col3{
+    width: 400px;
+    height: 200px;
+    text-align: center;
+}
+.col1 h1, .col2 h1, .col3 h1{
+    font-size: 2em;
+    background: gray;
+    font-weight: 500;
+}
+.col1 li, .col2 li, .col3 li{
+    list-style: none;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.col1 ul, .col2 ul, .col3 ul{
+    margin-top: 18%
+}
+.cols{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.headinga h1{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 30px;
+}
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+/* Services */
+#services {
+    padding: 80px 0;
+    text-align: center;
+}
+
+#services h1 {
+    font-size: 60px;
+    margin-left: 1%;
+}
+
+.box {
+    background: #262626;
+    width: 300px;
+    height: 250px;
+    transition: background 0.3s;
+}
+
+.boxes {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.box h2{
+        font-size: 25px;
+        text-align: center;
+}
+.box{
+    background: #262626;
+    width: 300px;
+    height: auto; /* This allows the height to adjust automatically to the content */
+    transition: background 0.3s;
+    padding: 20px; /* Optional: Add padding to create space inside the box */
+}
+.box p{
+    font-size: 13px;
+    margin-top: 10px;
+}
+.box i {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+.box:hover {
+    background: #ff004f;
+}
+
+/* Contact */
+.contacts{
+    text-align: center;
+}
+.flex h1{
+    font-size: 60px;
+    text-align: center;
+}
+.contacts{
+    margin-top: 2%;
+}
+.inputbox{
+    margin-top: 5%;
+   margin-left: 5%;
+   
+}
+.inputbox input{
+    padding: 0 10px;
+    font-size: 20px;
+    width: 500px;
+    height: 40px;
+    margin-top: 30px;
+    outline: none;
+}
+.inputbox textarea{
+    padding: 0 10px;
+    font-size: 20px;
+    width: 500px;
+    margin-top: 30px;
+    height: 200px;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    margin-top: 60px;
+margin-left: 80%;
+width: 200px;
+height: 50px;
+
+background: #ff004f;
+color: #fff;
+font-size: 20px;
+}
+
+/* Style for the message after submitting */
+#message {
+ 
+    color: green; /* Color for the message text */
+    font-size: 18px; /* Adjust the font size */
+    text-align: center; /* Center the message */
+    background-color: #262626; /* Background color */
+    padding: 10px; /* Padding around the message */
+    border-radius: 5px; /* Rounded corners for a smoother look */
+    width: 90%; /* Adjust the width as needed */
+    margin-left: 5%; /* Center the message horizontally */
+    
+}
+@media (max-width: 600px) {
+    .header-text{
+        margin-top: 25%;
+        font-size: 10px;
+    }
+    body{
+        text-align: center;
+    }
+  
+#header {
+   
+    width: 100%;
+    height: 60vh;
+}
+.header-text h1 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+.header-text p{
+    font-size: 18px;
+}
+.container {
+    padding: 10px 5%;
+}
+.logo {
+    width: 100px;
+    margin-right: 10px;
+}
+.headinga h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 1%;
+}
+    /* About */
+.cols{
+    margin-top: 5%;
+    flex-direction: column;
+    margin-left: 10%;
+    gap: 10px;
+}
+.col1 ul, .col2 ul, .col3 ul{
+    margin-top: 10%
+   
+}
+.col1 li, .col2 li, .col3 li{
+    list-style: none;
+    font-size: 13px;
+    margin-top: 15px;
+}
+.col1 h1, .col2 h1, .col3 h1{
+    font-size: 1.5em;
+    background: gray;
+    font-weight: 300;
+}
+.col1, .col2, .col3{
+    width: 300px;
+    height: 150px;
+}
+.tab-links::after{
+    display: none;
+}
+
+     /* Services */
+
+#services {
+    padding: 60px 0;
+    text-align: center;
+}
+#services h1 {
+    font-size: 30px;
+   
+}
+
+.boxes {
+    gap: 25px;
+    margin-left: 15%;
+    margin-top: 5%;
+   flex-direction: column;
+}
+
+.box h2{
+    font-size: 20px;
+}
+.box p{
+    font-size: 10px;
+    margin-top: 8px;
+    text-align: justify;
+}
+.box i {
+    font-size: 20px;
+}
+.box {
+    
+    width: 250px;
+    height: 200px;
+    transition: background 0.3s;
+}
+
+       /* Contact */
+#contact{
+    margin-left: 10%;
+}
+.contacts{
+    text-align: center;
+    margin-right: 20%;
+}
+.flex h1{
+    font-size: 40px;
+    margin-right: 15%;
+}
+.contacts{
+    font-size: 10px;
+    margin-left: 5%;
+}
+.inputbox{
+    margin-top: 2%;
+    margin-right: 20%;
+   
+}
+.inputbox input{
+    padding: 0 10px;
+    font-size: 10px;
+    width: 250px;
+    height: 20px;
+   margin-top: 20px;
+}
+.inputbox textarea{
+    padding: 0 10px;
+    font-size: 12px;
+    width: 250px;
+    margin-top: 20px;
+    height: 100px;
+}
+
+button{
+    margin-top: 30px;
+    width: 120px;
+    height: 30px;
+    margin-left: 60%;
+    background: #ff004f;
+    color: #fff;
+    font-size: 15px;
+}
+#message {
+ 
+    font-size: 13px; 
+    padding: 8px; 
+    width: 70%; /* Adjust the width as needed */
+    margin-left: 3%; /* Center the message horizontally */
+    
+}}
+
+
+
+
+
+
+
+
+

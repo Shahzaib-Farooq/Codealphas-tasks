@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="logo.png" class="logo">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#abouts">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Front End Developer</p>
+        <h1>Hi, I'm <span>Shahzaib</span><br> From Pakistan</h1>
+      </div>
+    </div>
+  </div>
+       <!-- About -->
+        <div id="abouts">
+        <div class="headinga"><h1>About Me</h1></div>
+       <div class="cols">
+        <div class="col1">
+          <h1 class="tab-links active-link" >Skills</h1>
+          <ul>
+            <li>Front End Developer</li>
+            <li>Woking With MySql</li>
+            <li>MS Office</li>
+          </ul>
+        </div>
+        <div class="col2">
+          <h1 class="tab-links active-link">Experience</h1>
+          <ul>
+            <li>1-month Internship Experience as a Front-End Developer at CodeAlpha</li>
+            <li>3 Years teaching Experience at Excellent Grammar School</li>
+          </ul>
+        </div>
+        <div class="col3">
+          <h1 class="tab-links active-link">Education</h1>
+          <ul>
+            <li>BS in Computer Science from Fuuast</li>
+            <li>Intermediate from Jinnah Govt College</li>
+            <li>Matriculation from Vital House Grammar School</li>
+          </ul>
+        </div>
+       </div>
+      </div>
+ 
+ <!----- ----------------------Services------------------------>
+ <div id="services">
+  <div class="heading"><h1>My Services</h1></div>
+ <div class="boxes">
+  <div class="box">
+    <i class="fa-solid fa-pen-nib"></i>
+    <h2>Web Design</h2>
+    <p>Web services enable communication and data exchange between different applications or systems over the internet using standardized protocols like HTTP, SOAP, or REST.</p>
+    <a href="#">learn more</a>
+  </div>
+  <div class="box">
+    <i class="fa-duotone fa-solid fa-code"></i>
+    <h2>Web Development</h2>
+  <p>Our web development services bring your ideas to life with robust, scalable, and secure solutions. From dynamic websites to custom web applications, we build using the latest technologies for optimal performance</p>
+    <a  href="#">learn more</a>
+  </div>
+  <div class="box">
+    <i class="fa-solid fa-database"></i>
+    <h2>Databases</h2>
+  <p>We offer efficient and secure database solutions to store and manage your data with ease. Our database management services ensure high availability, scalability, and integrity for your business-critical information.</p>
+  <a  href="#">learn more</a>
+</div>
+ </div>
+ </div>
+<!------------------------------Contact------------------------>
+
+<div id="contact">
+  <div class="flex">
+    <h1>Contact Me</h1>
+    <div class="contacts">
+    
+      <p>Gmail: shahzaibhazara@gmail.com</p><br>
+      <p>Phone: +923172518687</p>
+    </div>
+   
+    <div class="inputbox">
+      <input placeholder="Your Name" type="text"><br>
+      <input placeholder="Your Email" type="text"><br>
+      <textarea placeholder="Your message" ></textarea>
+    </div>
+    <button>Submit</button> 
+    <p id="message"></p>
+  </div>
+</div>
+
+
+
+ <script src="app.js"></script> 
+</body>
+</html>
